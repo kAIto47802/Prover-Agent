@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you find Prover Agent useful in your research, please consider citing the following paper."
+authors:
+  - name: Kaito Baba
+title: "Prover Agent: An Agent-Based Framework for Formal Mathematical Proofs"
+url: "https://github.com/kAIto47802/Prover-Agent"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Baba"
+      given-names: "Kaito"
+    - family-names: "Liu"
+      given-names: "Chaoran"
+    - family-names: "Kurita"
+      given-names: "Shuhei"
+    - family-names: "Sannai"
+      given-names: "Akiyoshi"
+  collection-title: "arXiv preprint arXiv:2506.19923"
+  title: "Prover Agent: An agent-based framework for formal mathematical proofs"
+  year: 2025

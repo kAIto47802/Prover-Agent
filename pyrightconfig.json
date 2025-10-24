@@ -1,0 +1,15 @@
+{
+  "include": ["prover_agent", "configs"],
+  "exclude": [
+    "**/__pycache__",
+    ".mypy_cache/",
+    ".ruff_cache/",
+    ".git/",
+    ".vscode/",
+    "logs",
+    "runs",
+    "lean_workspace/",
+    "data/",
+    "*.sh"
+  ]
+}

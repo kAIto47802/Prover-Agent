@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prover_agent"
+description = "An Agent-Based Framework for Formal Mathematical Proofs"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Kaito Baba", email = "k.ai.to47802@gmail.com" }]
+urls = { Homepage = "https://github.com/kAIto47802/Prover-Agent" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Typing :: Typed",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = [
+    "data-science", "machine-learning", "deep-learning", 
+    "ai", "artificial-intelligence",
+    "agent", "agent-framework", "agentic-ai",
+    "llm", "large-language-model",
+    "math", "theorem-proving", "automated-theorem-proving",
+    "lean", "proof-assistant", "formal-methods", "formal-verification",
+    "ai-for-math",
+]
+dependencies = [
+    "openai",
+]
+requires-python = ">=3.9"
+dynamic = ["version"]
+
+[project.optional-dependencies]
+check = ["ruff", "mypy", "types-setuptools"]
+data = ["datasets"]
+server = ["vllm", "litellm[proxy]"]
+other = [
+    "transformers",
+    "vllm",
+    "pantograph @ git+https://github.com/stanford-centaur/PyPantograph.git",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "prover_agent.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["prover_agent*"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+disallow_untyped_defs = true
+exclude = ["^build/"]
