@@ -96,6 +96,11 @@ python scripts/prepare_minif2f.py
 ```
 This will create a `data/miniF2F/test.json` file containing the processed MiniF2F dataset.
 
+🤗 You can also find the preprocessed version of the MiniF2F dataset here: 
+<a href="https://huggingface.co/datasets/kAIto47802/minif2f-test">
+  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-blue" alt="Hugging Face Datasets" align="top">
+</a>
+
 ### 5. Configure the LLM server for your environment
 
 Modify `serve.sh` (for launching the vLLM server) and `server_config.yml` (for the LiteLLM proxy) according to your machine specifications.
