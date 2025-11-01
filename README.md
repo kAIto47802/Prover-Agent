@@ -151,7 +151,7 @@ The results will be saved in the `runs/` directory, which will be created automa
 If you find Prover Agent useful in your research, please consider citing the following paper:
 
 ```bibtex
-@article{baba2024proveragent,
+@article{baba2025proveragent,
   title={{Prover Agent}: An Agent-Based Framework for Formal Mathematical Proofs},
   author={Baba, Kaito and Liu, Chaoran and Kurita, Shuhei and Sannai, Akiyoshi},
   journal={arXiv preprint arXiv:2506.19923},
